@@ -20,13 +20,13 @@ export default function Monthly({initialBalance}) {
          array.push(initialBalance)
    
     }
-
+    setData(array)
     
   };
   
   return (
     <div>
-        <Graph array={array}/>
+        <Graph initialBalance={initialBalance} monthly={monthly}/>
         <h1>initialalance:{initialBalance}</h1>
       <form onSubmit={handleSubmit}>
         <label>
