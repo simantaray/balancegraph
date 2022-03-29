@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.graph1{
+  position: relative;
+  width: 100vw;
+}
+.graph2{
+  padding: absolute;
+  width: 50px;
+}
