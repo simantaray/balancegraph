@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import Graph from "./Graph"
-export default function Monthly({initialBalance}) {
+import Graph from "./Graph";
+export default function Monthly({ initialBalance }) {
   const [monthly, setMonthly] = useState(1);
-  
- 
+
   const handleSubmit = (event) => {
     event.preventDefault();
-  
   };
-  
+
   return (
     <div>
-        <Graph initialBalance={initialBalance} monthly={monthly}/>
-        <h1>initialalance:{initialBalance}</h1>
+      <Graph initialBalance={initialBalance} monthly={monthly} />
+      <h1>initialalance:{initialBalance}</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Balance:
@@ -20,8 +18,6 @@ export default function Monthly({initialBalance}) {
         </label>
         <button>Submit</button>
       </form>
-      
-      
     </div>
   );
 }
